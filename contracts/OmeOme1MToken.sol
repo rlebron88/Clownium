@@ -1,6 +1,6 @@
 pragma solidity ^0.4.18;
 
-import "./SafeMath.sol";
+import "zepplin-solidity/contracts/math/SafeMath.sol";
 import "./ERC223.sol";
 import "./ERC223Compatible.sol";
 

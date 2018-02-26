@@ -19,9 +19,11 @@ contract OmeOme1MToken is ERC223 {
     uint constant internal BLOCK_NUMBER_DISTRIBUTION_END = 1100000;
     uint constant internal DISTRIBUTION_AMOUNT = 100e18;
 
+    address public owner;
+
     uint256 public totalSupply = 0;
     string constant internal _name = "OmeOme1MToken";
-    bytes32 constant internal _symbol = "💯万🎉;
+    bytes32 constant internal _symbol = "💯万🎉";
     uint8 constant internal _decimals = 18;
     
     mapping(address => uint) balanceMap;
@@ -31,11 +33,27 @@ contract OmeOme1MToken is ERC223 {
      */
     event Claim(address indexed claimer);
     
+    modifier onlyOwner {
+        require(msg.sender == owner);
+        _;
+    }
+    
+    function OmeOme1MToken() public {
+        owner = msg.sender;
+    }
+    
     /**
      * Fallback function when someone sent nuko to this contract
      */
     function() external payable {
         revert();   // Not accept any donations or funds to be sent to this contract
+    }
+    
+    /**
+     * Kill this contract
+     */
+    function epicDestruction() external onlyOwner {
+        selfdestruct(owner);
     }
     
     /**

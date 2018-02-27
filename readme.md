@@ -11,13 +11,13 @@ You can "claim" 100 of this token by calling `claim()` function, but you can do 
 
 **This is time-limited distributed token, you have to call `claim()` equal or before block #1100000**
 
-You can do it by [Nekonium Wallet](https://github.com/nekonium/mist)
+You can do it by [Nekonium Wallet](https://github.com/nekonium/mist/releases)
 
 Thing you need: NUKO! If you don't have, you can get a little at [my faucet](https://faucet.nekonium.net/)
 or you can use various faucets on the web which you can find the list on [here](https://nekonium.github.io/)
 
 1. Open `Contracts`
-2. Click `View contracts`
+2. Click `Watch contracts`
 3. You can set name whatever you want, but you have to set contract address
    ```
    0xE9aF34290EaF69dF76bbb967E8709C6B13CecDA1
@@ -27,7 +27,7 @@ or you can use various faucets on the web which you can find the list on [here](
     [{"constant":true,"inputs":[],"name":"totalSupply","outputs":[{"name":"_totalSupply","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"symbol","outputs":[{"name":"__symbol","type":"bytes32"}],"payable":false,"stateMutability":"pure","type":"function"},{"constant":true,"inputs":[],"name":"owner","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"name","outputs":[{"name":"__name","type":"string"}],"payable":false,"stateMutability":"pure","type":"function"},{"constant":true,"inputs":[{"name":"_owner","type":"address"}],"name":"balanceOf","outputs":[{"name":"balance","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"decimals","outputs":[{"name":"__decimals","type":"uint8"}],"payable":false,"stateMutability":"pure","type":"function"},{"inputs":[],"payable":false,"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"name":"claimer","type":"address"}],"name":"Claim","type":"event"},{"constant":false,"inputs":[{"name":"_to","type":"address"},{"name":"_value","type":"uint256"}],"name":"transfer","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"anonymous":false,"inputs":[{"indexed":true,"name":"_from","type":"address"},{"indexed":true,"name":"_to","type":"address"},{"indexed":true,"name":"_value","type":"uint256"},{"indexed":false,"name":"_data","type":"bytes"}],"name":"Transfer","type":"event"},{"payable":true,"stateMutability":"payable","type":"fallback"},{"constant":false,"inputs":[],"name":"claim","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_to","type":"address"},{"name":"_value","type":"uint256"},{"name":"_data","type":"bytes"}],"name":"transfer","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[],"name":"epicDestruction","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"}]
     ```
 4. Hit ok, the token contract will be added to your contracts list
-5. Click added contract, select function `claim()` at dropdown in right pane (not the furthest right menu with icons)
+5. Click added contract, select function `Claim` at dropdown in right pane (not the furthest right menu with icons)
 6. Please examine that you are selecting the right account you want to get tokens at `Execute from` dropdown
 7. Press `Execute`! After your transaction is mined, **you would get 100 1MOmeOmeTokens!**
    

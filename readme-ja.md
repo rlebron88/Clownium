@@ -11,9 +11,9 @@
 
 **#1100000以前のブロックまででしかもらえません**
 
-[Nekonium Wallet](https://github.com/nekonium/mist)を使います。準備してください
+[Nekonium Wallet](https://github.com/nekonium/mist/releases)を使います。準備してください
 
-ウォレットにNUKOが入っていないなら、[水飲み場](https://faucet.nekonium.net/)で少しだけですがもらえます。その他にもファーセットがありますので[ここのリストを見てください](https://nekonium.github.io/)。
+受取にはNUKOを持っている必要があります。ウォレットにNUKOが入っていないなら、[水飲み場](https://faucet.nekonium.net/)で少しだけですがもらえます。その他にもファーセットがありますので[ここのリストを見てください](https://nekonium.github.io/)。
 
 1. `コントラクト`を押してください
 2. `コントラクトを見る`を押します
